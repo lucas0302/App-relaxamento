@@ -1,8 +1,14 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/screen/login/startup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
