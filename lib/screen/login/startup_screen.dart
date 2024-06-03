@@ -2,6 +2,7 @@ import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
 import 'package:app_relaxamento_faculdade/screen/login/login_screen.dart';
 import 'package:app_relaxamento_faculdade/screen/login/sign_up_screen.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,6 +14,8 @@ class StartUpScreen extends StatefulWidget {
 }
 
 class _StartUpScreenState extends State<StartUpScreen> {
+  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -55,7 +58,9 @@ class _StartUpScreenState extends State<StartUpScreen> {
           const Spacer(),
           RoundButton(
               title: "CADASTRAR",
-              onPressed: () {
+              onPressed: () async {
+                await FirebaseAnalytics.instance.logEvent(name: "clicou_cadastrar", parameters: {"userid":123});
+                await FirebaseAnalytics.instance.
                 context.push(const SignUpScreen());
               }),
           Row(
