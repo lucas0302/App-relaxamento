@@ -2,6 +2,7 @@ import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_text_field.dart';
 import 'package:app_relaxamento_faculdade/screen/home/topic_screen.dart';
+import 'package:app_relaxamento_faculdade/screen/home/welcome_screen.dart';
 import 'package:app_relaxamento_faculdade/screen/login/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -14,7 +15,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -178,9 +178,11 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 20,
               ),
-              RoundButton(title: "ENTRAR", onPressed: () {
-                context.push(const ChoseTopicScreen());
-              }),
+              RoundButton(
+                  title: "ENTRAR",
+                  onPressed: () {
+                    context.push(const WelcomeScreen());
+                  }),
               TextButton(
                 onPressed: () {},
                 child: Text(
@@ -206,7 +208,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   TextButton(
                     onPressed: () {
-                      context.push(const SignUpScreen());
+                      context.push(const WelcomeScreen());
                     },
                     child: Text(
                       "CADASTRAR",

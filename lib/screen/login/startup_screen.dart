@@ -61,7 +61,7 @@ class _StartUpScreenState extends State<StartUpScreen> {
           RoundButton(
             title: "CADASTRAR",
             onPressed: () {
-              context.push(const WelcomeScreen());
+              context.push(const SignUpScreen());
             },
           ),
           Row(
