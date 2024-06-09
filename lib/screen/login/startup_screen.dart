@@ -1,5 +1,7 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
+import 'package:app_relaxamento_faculdade/screen/home/reminder_screen.dart';
+import 'package:app_relaxamento_faculdade/screen/home/welcome_screen.dart';
 import 'package:app_relaxamento_faculdade/screen/login/login_screen.dart';
 import 'package:app_relaxamento_faculdade/screen/login/sign_up_screen.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -57,12 +59,11 @@ class _StartUpScreenState extends State<StartUpScreen> {
           ),
           const Spacer(),
           RoundButton(
-              title: "CADASTRAR",
-              onPressed: () async {
-                await FirebaseAnalytics.instance.logEvent(name: "clicou_cadastrar", parameters: {"userid":123});
-                await FirebaseAnalytics.instance.
-                context.push(const SignUpScreen());
-              }),
+            title: "CADASTRAR",
+            onPressed: () {
+              context.push(const WelcomeScreen());
+            },
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
