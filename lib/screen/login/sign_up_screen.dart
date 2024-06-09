@@ -1,6 +1,7 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_text_field.dart';
+import 'package:app_relaxamento_faculdade/screen/home/topic_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -247,7 +248,9 @@ class _SingUpScreenState extends State<SignUpScreen> {
               ),
 
 
-              RoundButton(title: "COMEÇAR", onPressed: () {}),
+              RoundButton(title: "COMEÇAR", onPressed: () {
+                context.push(const ChoseTopicScreen());
+              }),
               
 
               const Spacer(),              

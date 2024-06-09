@@ -1,6 +1,7 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_text_field.dart';
+import 'package:app_relaxamento_faculdade/screen/home/topic_screen.dart';
 import 'package:app_relaxamento_faculdade/screen/login/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -177,7 +178,9 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 20,
               ),
-              RoundButton(title: "ENTRAR", onPressed: () {}),
+              RoundButton(title: "ENTRAR", onPressed: () {
+                context.push(const ChoseTopicScreen());
+              }),
               TextButton(
                 onPressed: () {},
                 child: Text(

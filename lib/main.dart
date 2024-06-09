@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'APP-RELAXAMENTO',
+      title: 'Meditation App',
       debugShowCheckedModeBanner: false, 
       theme: ThemeData(
         fontFamily: "HelveticaNeue",
