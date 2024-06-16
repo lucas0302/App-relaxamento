@@ -1,6 +1,7 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/circle_button.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
+import 'package:app_relaxamento_faculdade/screen/home/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -112,12 +113,18 @@ class _RemindersScreenState extends State<RemindersScreen> {
                   ],
                 ),
               ),
-              RoundButton(title: "SAVE", onPressed: () {}),
+              RoundButton(
+                  title: "SAVE",
+                  onPressed: () {
+                    context.push(const HomeScreen());
+                  }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.push(const HomeScreen());
+                      },
                       child: Text(
                         "NÃO, OBRIGADO",
                         style: TextStyle(
