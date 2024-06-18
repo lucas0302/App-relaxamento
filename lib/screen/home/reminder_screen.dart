@@ -114,16 +114,16 @@ class _RemindersScreenState extends State<RemindersScreen> {
                 ),
               ),
               RoundButton(
-                  title: "SAVE",
+                  title: "salvar",
                   onPressed: () {
-                    context.push(const HomeScreen());
+                    context.push(const MainTabViewScreen());
                   }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
                       onPressed: () {
-                        context.push(const HomeScreen());
+                        context.push(const MainTabViewScreen());
                       },
                       child: Text(
                         "NÃO, OBRIGADO",
