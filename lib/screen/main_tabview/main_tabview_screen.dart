@@ -1,3 +1,5 @@
+import 'package:app_relaxamento_faculdade/common_widget/tab_button.dart';
+import 'package:app_relaxamento_faculdade/screen/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainTabViewScreen extends StatefulWidget {
@@ -88,7 +90,7 @@ Widget build(BuildContext context) {
             changetab(4);
 
             }),
-            
+          ] 
             
         ), // Row
       ), 

@@ -1,7 +1,7 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/common_widget/circle_button.dart';
 import 'package:app_relaxamento_faculdade/common_widget/round_button.dart';
-import 'package:app_relaxamento_faculdade/screen/home/home_screen.dart';
+import 'package:app_relaxamento_faculdade/screen/main_tabview/main_tabview_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

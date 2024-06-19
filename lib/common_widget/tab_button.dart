@@ -1,3 +1,4 @@
+import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:flutter/material.dart';
 
 class TabButton extends StatelessWidget {
@@ -21,10 +22,10 @@ class TabButton extends StatelessWidget {
                 color: isSelect ? Tcolor.primary : Colors.transparent,
                 borderRadius: BorderRadius.circular(15)
             ),
-            alignment:alignment.center,
+            alignment: Alignment.center,
             child: Image.asset(
                 icon,
-                width 22,
+                width: 22,
                 height:22,
                 color: isSelect ? Colors.white : Tcolor.secondaryText,
             ),

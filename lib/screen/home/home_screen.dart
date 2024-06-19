@@ -9,7 +9,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List _fArr = [
+  List rArr = [
     {
       "image": "assets/img/r1.png",
       "title": "Focu",
@@ -399,7 +399,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     separatorBuilder: (context, index) => const SizedBox(
                           width: 20,
                         ),
-                    itemCount: rArr.lengh),
+                    itemCount: rArr.length),
               )
             ],
           ),
