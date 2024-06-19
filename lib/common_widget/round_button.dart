@@ -23,22 +23,20 @@ class RoundButton extends StatelessWidget {
         onPressed: onPressed,
         minWidth: double.maxFinite,
         elevation: 0,
-        color: type == RoundButtonType.primary ? Tcolor.primary : Tcolor.tertiary,
+        color: type == RoundButtonType.primary ? Tcolor.primary : Tcolor.secondary,
         height: 60,
         shape: RoundedRectangleBorder(
           side: BorderSide.none,
-          borderRadius: BorderRadius.circular(30)
-        ), 
+          borderRadius: BorderRadius.circular(30),
+        ),
         child: Text(
           title,
           style: TextStyle(
-            color: type == RoundButtonType.primary
-              ? Colors.white
-              : Tcolor.primaryText,
+            color: type == RoundButtonType.primary ? Colors.white : Tcolor.primaryText,
             fontSize: 14,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w600
           ),
-        ), 
+        ),
       ),
     );
   }

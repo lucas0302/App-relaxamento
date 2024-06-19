@@ -1,7 +1,6 @@
 import 'package:app_relaxamento_faculdade/common/color_extension.dart';
 import 'package:app_relaxamento_faculdade/screen/login/startup_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 // import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -23,11 +22,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "HelveticaNeue",
         appBarTheme: const AppBarTheme(
-            elevation: 0, backgroundColor: Colors.transparent),
+            elevation: 0, 
+            backgroundColor: Colors.transparent
+        ),
         colorScheme: ColorScheme.fromSeed(seedColor: Tcolor.primary),
         useMaterial3: false,
       ),
-      home: const StartUpScreen(),
+      home: const StartupScreen(),
     );
   }
 }
